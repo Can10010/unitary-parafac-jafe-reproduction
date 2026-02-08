@@ -58,7 +58,7 @@ DOI: 10.1109/LCOMM.2019.2896593
 
 下图展示了一组联合 DOA–频率估计结果，其中黑色星号为估计值，红色叉号为真实值：
 
-<img width="757" height="620" alt="image" src="https://github.com/user-attachments/assets/5e89d0d5-e983-4241-983a-5db7ac930997" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/5e89d0d5-e983-4241-983a-5db7ac930997" />
 
 
 （如需复现该结果，可直接运行 `UPARAFAC.m`）
