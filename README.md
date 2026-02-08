@@ -65,23 +65,20 @@ DOI: 10.1109/LCOMM.2019.2896593
 
 ---
 ## 依赖说明
-
+**本仓库复现代码涉及两个外部依赖函数（均不随仓库分发），请自行获取并加入 MATLAB 路径。**
+### 1) Khatri-Rao 积：`khatrirao.m`
 本代码中使用了 Khatri-Rao 积运算，依赖 MATLAB Tensor Toolbox 中的函数 `khatrirao.m`。
 
-该函数来自：
-> Brett W. Bader and Tamara G. Kolda,  
-> *MATLAB Tensor Toolbox*, Sandia National Laboratories.
 
 源码及许可证请见：
 http://www.tensortoolbox.org/
 
-
+### 2) 复值 PARAFAC 拟合：`comfac.m`
 本复现代码调用了外部函数 `comfac.m`，其版权与许可归原作者所有。
 
-N-way Toolbox / three-mode 官方页面：
-- three-mode / N-way Toolbox（含 COMFAC/Complex PARAFAC 下载入口）：https://ucphchemometrics.com/algorithm-for-fitting-complex-valued-parafac-cpd-model/  
+获取方式：https://ucphchemometrics.com/algorithm-for-fitting-complex-valued-parafac-cpd-model/  
 
-**本仓库不包含  `khatrirao.m`与`comfac.m` 的源文件，请用户自行下载安装并加入 MATLAB 路径。**
+
 
 ---
 ## 声明
