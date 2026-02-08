@@ -79,6 +79,19 @@ http://www.tensortoolbox.org/
 
 ⚠️ 本仓库未包含该函数源码，请用户自行下载安装并加入 MATLAB 路径。
 
+本项目的核心实现（`UPARAFAC.m`）在张量分解步骤中调用了第三方函数 **`comfac`**（Complex-valued PARAFAC fitting）。
+
+- `comfac.m` 版权归原作者所有（Rasmus Bro / Nikos Sidiropoulos）。
+- 该文件头部声明：**不得修改**、**不得增添代码**，应视为 **read-only**。
+- 本仓库不声称对 `comfac` 拥有任何权利；仅在复现研究/学习场景中调用。
+
+若你需要完整功能，请自行获取原版 `comfac.m` 并放入 MATLAB 路径（或与 `UPARAFAC.m` 同目录）。
+
+### 参考文献
+- R. Bro, N. D. Sidiropoulos, and G. B. Giannakis, “A Fast Least Squares Algorithm for Separating Trilinear Mixtures,” Proc. ICA’99, 1999.
+- N. D. Sidiropoulos, G. B. Giannakis, and R. Bro, “Blind PARAFAC Receivers for DS-CDMA Systems,” IEEE Trans. Signal Processing, 2000.
+
+
 ## 声明
 
 - 本代码仅用于**学习、研究与算法复现**
