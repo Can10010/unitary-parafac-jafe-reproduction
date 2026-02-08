@@ -64,6 +64,20 @@ DOI: 10.1109/LCOMM.2019.2896593
 （如需复现该结果，可直接运行 `UPARAFAC.m`）
 
 ---
+## 依赖说明
+
+本代码中使用了 Khatri-Rao 积运算，依赖 MATLAB Tensor Toolbox 中的函数：
+
+- `khatrirao.m`
+
+该函数来自：
+> Brett W. Bader and Tamara G. Kolda,  
+> *MATLAB Tensor Toolbox*, Sandia National Laboratories.
+
+源码及许可证请见：
+http://www.tensortoolbox.org/
+
+⚠️ 本仓库未包含该函数源码，请用户自行下载安装并加入 MATLAB 路径。
 
 ## 声明
 
