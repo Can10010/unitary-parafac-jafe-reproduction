@@ -66,9 +66,7 @@ DOI: 10.1109/LCOMM.2019.2896593
 ---
 ## 依赖说明
 
-本代码中使用了 Khatri-Rao 积运算，依赖 MATLAB Tensor Toolbox 中的函数：
-
-- `khatrirao.m`
+本代码中使用了 Khatri-Rao 积运算，依赖 MATLAB Tensor Toolbox 中的函数 `khatrirao.m`。
 
 该函数来自：
 > Brett W. Bader and Tamara G. Kolda,  
@@ -77,21 +75,15 @@ DOI: 10.1109/LCOMM.2019.2896593
 源码及许可证请见：
 http://www.tensortoolbox.org/
 
-⚠️ 本仓库未包含该函数源码，请用户自行下载安装并加入 MATLAB 路径。
 
-本项目的核心实现（`UPARAFAC.m`）在张量分解步骤中调用了第三方函数 **`comfac`**（Complex-valued PARAFAC fitting）。
+本复现代码调用了外部函数 `comfac.m`，其版权与许可归原作者所有。
 
-- `comfac.m` 版权归原作者所有（Rasmus Bro / Nikos Sidiropoulos）。
-- 该文件头部声明：**不得修改**、**不得增添代码**，应视为 **read-only**。
-- 本仓库不声称对 `comfac` 拥有任何权利；仅在复现研究/学习场景中调用。
+N-way Toolbox / three-mode 官方页面：
+- three-mode / N-way Toolbox（含 COMFAC/Complex PARAFAC 下载入口）：https://ucphchemometrics.com/algorithm-for-fitting-complex-valued-parafac-cpd-model/  
 
-若你需要完整功能，请自行获取原版 `comfac.m` 并放入 MATLAB 路径（或与 `UPARAFAC.m` 同目录）。
+**本仓库不包含  `khatrirao.m`与`comfac.m` 的源文件，请用户自行下载安装并加入 MATLAB 路径。**
 
-### 参考文献
-- R. Bro, N. D. Sidiropoulos, and G. B. Giannakis, “A Fast Least Squares Algorithm for Separating Trilinear Mixtures,” Proc. ICA’99, 1999.
-- N. D. Sidiropoulos, G. B. Giannakis, and R. Bro, “Blind PARAFAC Receivers for DS-CDMA Systems,” IEEE Trans. Signal Processing, 2000.
-
-
+---
 ## 声明
 
 - 本代码仅用于**学习、研究与算法复现**
